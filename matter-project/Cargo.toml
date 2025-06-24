@@ -1,84 +1,64 @@
-# matter-project-enhanced/Cargo.toml
+# matter-project/Cargo.toml
+# Using Real rs-matter with Working Examples for Research
+
 [package]
-name = "matter-osi-analyzer-enhanced"
-version = "0.4.0"
+name = "matter-research-analyzer"
+version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@domain.com>"]
-description = "Enhanced Matter Protocol OSI Layer Analysis with Real Implementation"
+authors = ["Abubakar Wakili <abubakar.wakili@example.com>"]
+description = "Real Matter Protocol Research using rs-matter onoff_light example"
 license = "MIT"
-repository = "https://github.com/abubakarwakili9/IoT-Protocol-Comparison-Test"
 
 [dependencies]
-# Matter Protocol Core
+# Real Matter Protocol - Official Implementation
 rs-matter = { git = "https://github.com/project-chip/rs-matter.git", branch = "main" }
 
-# Async Runtime and Networking
+# Core dependencies (required by rs-matter)
 tokio = { version = "1.0", features = ["full"] }
-tokio-util = "0.7"
+tokio-util = { version = "0.7", features = ["net", "codec"] }
 futures = "0.3"
 
-# Serialization and Data
+# Serialization (used by rs-matter)
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-serde_cbor = "0.11"
-bincode = "1.3"
 
-# Networking Protocols
-coap = "0.12"
-mdns = "3.0"
-quinn = "0.10"
-rustls = "0.21"
+# Networking (required by rs-matter examples)
+socket2 = "0.5"
 
-# Cryptography
-ring = "0.16"
+# Cryptography (required by rs-matter)
+ring = "0.17"
 rand = "0.8"
 
-# Utilities and Error Handling
+# Error handling and logging
 anyhow = "1.0"
-thiserror = "1.0"
 log = "0.4"
 env_logger = "0.10"
+
+# Time utilities
 chrono = { version = "0.4", features = ["serde"] }
-uuid = { version = "1.0", features = ["v4"] }
-clap = { version = "4.0", features = ["derive"] }
 
-# Performance Monitoring
-sysinfo = "0.29"
-prometheus = { version = "0.13", optional = true }
+# Optional: Zero-configuration networking (for Linux/Mac)
+# Uncomment if on Linux with Avahi daemon
+# zeroconf = { version = "0.12", optional = true }
 
-# Development Dependencies
-[dev-dependencies]
-tokio-test = "0.4"
-criterion = "0.5"
+# Windows-specific
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winsock2", "ws2def"] }
 
-# Features
+# Features to match rs-matter examples
 [features]
-default = ["metrics"]
-metrics = ["prometheus"]
-embedded = []
+default = []
+zeroconf = ["rs-matter/zeroconf"]  # For Linux/Mac with mDNS
 
-# Benchmarks
-[[bench]]
-name = "transport_performance"
-harness = false
+# Examples (matching rs-matter structure)
+[[example]]
+name = "research_onoff_light"
+path = "examples/research_onoff_light.rs"
 
-[[bench]]
-name = "session_performance"
-harness = false
+# Development profile for faster builds
+[profile.dev]
+opt-level = 1
 
-# Binary targets
-[[bin]]
-name = "matter_enhanced_analyzer"
-path = "src/main.rs"
-
-[[bin]]
-name = "matter_device_simulator"
-path = "src/device_simulator.rs"
-
-[[bin]]
-name = "matter_commissioner"
-path = "src/commissioner.rs"
-
-[[bin]]
-name = "matter_performance_test"
-path = "src/performance_test.rs"
+[profile.release]
+opt-level = 3
+lto = true

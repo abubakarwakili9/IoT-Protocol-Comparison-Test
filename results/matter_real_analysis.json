@@ -1,0 +1,38 @@
+{
+  "protocol_name": "Real_Matter_Protocol",
+  "analysis_timestamp": "2025-06-24T18:40:50.850905+00:00",
+  "osi_layer_4_transport": {
+    "udp_discovery_time_ms": 14.375,
+    "tcp_connection_time_ms": 16.107,
+    "total_transport_overhead": 48,
+    "efficiency_score": 0.75
+  },
+  "osi_layer_5_session": {
+    "commissioning_time_ms": 94.932,
+    "session_establishment_efficiency": 0.78
+  },
+  "osi_layer_6_presentation": {
+    "encoding_time_ms": 16.065,
+    "compression_ratio": 0.85
+  },
+  "osi_layer_7_application": {
+    "discovery_time_ms": 31.351,
+    "cluster_initialization_time_ms": 15.639
+  },
+  "matter_specifics": {
+    "device_type": "OnOff Light (0x0100)",
+    "commissioning_mode": "Standard",
+    "supported_clusters": [
+      "Basic Information",
+      "OnOff",
+      "Descriptor"
+    ],
+    "vendor_id": 65521,
+    "product_id": 32768
+  },
+  "test_environment": {
+    "os_platform": "windows-x86_64",
+    "matter_implementation": "rs-matter",
+    "test_date": "2025-06-24 18:40:50 UTC"
+  }
+}

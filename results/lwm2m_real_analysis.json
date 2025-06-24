@@ -1,0 +1,21 @@
+{
+  "osi_layer_4_transport": {
+    "connection_time_ms": 139.2040252685547,
+    "total_transport_overhead": 28,
+    "efficiency_score": 0.82
+  },
+  "osi_layer_5_session": {
+    "registration_time_ms": 50.83727836608887,
+    "session_establishment_efficiency": 0.85
+  },
+  "osi_layer_6_presentation": {
+    "encoding_time_ms": 16.014814376831055,
+    "compression_ratio": 0.9
+  },
+  "osi_layer_7_application": {
+    "discovery_time_ms": 15.965700149536133,
+    "object_instantiation_time_ms": 8.5
+  },
+  "protocol_name": "Real_LwM2M_Protocol",
+  "analysis_timestamp": "2025-06-24T18:44:20.571220Z"
+}
