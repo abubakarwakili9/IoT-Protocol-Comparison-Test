@@ -1,1 +1,3 @@
-fn main() { println!("Matter analyzer placeholder"); } 
+fn main() {
+    println!("Matter analyzer placeholder");
+}

@@ -1,16 +1,16 @@
 {
-    "comparison_timestamp": "2025-06-24T14:23:37.589644",
+    "comparison_timestamp": "2025-06-24T18:22:50.432556",
     "protocols_compared": [
         "LwM2M",
         "Matter"
     ],
     "lwm2m_metrics": {
         "protocol": "LwM2M",
-        "transport_time": 45.323848724365234,
-        "session_time": 159.44576263427734,
-        "encoding_time": 16.118764877319336,
-        "discovery_time": 48.19178581237793,
-        "total_latency": 269.08016204833984,
+        "transport_time": 41.89014434814453,
+        "session_time": 161.23652458190918,
+        "encoding_time": 12.58087158203125,
+        "discovery_time": 55.80782890319824,
+        "total_latency": 271.5153694152832,
         "overall_efficiency": 0.7514285714285714
     },
     "matter_metrics": {
@@ -30,9 +30,9 @@
         "overall_winner": "Matter"
     },
     "performance_differences": {
-        "transport_difference_ms": 204.67615127563477,
-        "session_difference_ms": 292.55423736572266,
-        "total_latency_difference_ms": 553.9198379516602,
+        "transport_difference_ms": 208.10985565185547,
+        "session_difference_ms": 290.7634754180908,
+        "total_latency_difference_ms": 551.4846305847168,
         "efficiency_difference": 0.12293040293040292
     }
 }

@@ -1,11 +1,11 @@
 {
     "protocol_name": "LwM2M",
-    "analysis_timestamp": "2025-06-24T14:23:36.673010",
+    "analysis_timestamp": "2025-06-24T18:22:49.430940",
     "analysis_type": "Real_Protocol_OSI_Layers_4_7",
-    "total_analysis_time_ms": 324.46885108947754,
+    "total_analysis_time_ms": 403.44882011413574,
     "osi_layer_4_transport": {
         "protocol": "CoAP/UDP",
-        "connection_time_ms": 45.323848724365234,
+        "connection_time_ms": 41.89014434814453,
         "udp_overhead": 8,
         "coap_header_overhead": 4,
         "total_transport_overhead": 12,
@@ -15,7 +15,7 @@
     },
     "osi_layer_5_session": {
         "session_type": "LwM2M_Registration",
-        "registration_time_ms": 159.44576263427734,
+        "registration_time_ms": 161.23652458190918,
         "session_payload_size": 27,
         "session_establishment": "successful",
         "lifetime_seconds": 86400,
@@ -25,7 +25,7 @@
     },
     "osi_layer_6_presentation": {
         "encoding_format": "LwM2M_TLV",
-        "encoding_time_ms": 16.118764877319336,
+        "encoding_time_ms": 12.58087158203125,
         "raw_data_size": 84,
         "encoded_size": 24,
         "compression_ratio": 3.5,
@@ -47,7 +47,7 @@
             "Location_Object_6",
             "Connectivity_Statistics_Object_7"
         ],
-        "discovery_time_ms": 48.19178581237793,
+        "discovery_time_ms": 55.80782890319824,
         "resources_discovered": 8,
         "semantic_operations": [
             "Read",
@@ -64,7 +64,7 @@
         "standardization_body": "OMA_SpecWorks"
     },
     "summary_metrics": {
-        "total_latency_ms": 269.08016204833984,
+        "total_latency_ms": 271.5153694152832,
         "total_overhead_bytes": 264,
         "overall_efficiency": 0.7514285714285714
     }
