@@ -1,0 +1,71 @@
+{
+    "protocol_name": "LwM2M",
+    "analysis_timestamp": "2025-06-24T14:23:36.673010",
+    "analysis_type": "Real_Protocol_OSI_Layers_4_7",
+    "total_analysis_time_ms": 324.46885108947754,
+    "osi_layer_4_transport": {
+        "protocol": "CoAP/UDP",
+        "connection_time_ms": 45.323848724365234,
+        "udp_overhead": 8,
+        "coap_header_overhead": 4,
+        "total_transport_overhead": 12,
+        "transport_reliability": "best_effort",
+        "connection_state": "connectionless",
+        "efficiency_score": 0.95
+    },
+    "osi_layer_5_session": {
+        "session_type": "LwM2M_Registration",
+        "registration_time_ms": 159.44576263427734,
+        "session_payload_size": 27,
+        "session_establishment": "successful",
+        "lifetime_seconds": 86400,
+        "session_overhead_bytes": 72,
+        "session_efficiency": 0.92,
+        "session_complexity": "low"
+    },
+    "osi_layer_6_presentation": {
+        "encoding_format": "LwM2M_TLV",
+        "encoding_time_ms": 16.118764877319336,
+        "raw_data_size": 84,
+        "encoded_size": 24,
+        "compression_ratio": 3.5,
+        "encoding_efficiency": 0.2857142857142857,
+        "data_format": "binary_tlv",
+        "compression_algorithm": "tlv_binary",
+        "encoding_overhead_bytes": 4
+    },
+    "osi_layer_7_application": {
+        "application_protocol": "LwM2M",
+        "object_model": "OMA_LwM2M_Object_Model",
+        "supported_objects": [
+            "Security_Object_0",
+            "Server_Object_1",
+            "Access_Control_Object_2",
+            "Device_Object_3",
+            "Connectivity_Monitoring_Object_4",
+            "Firmware_Update_Object_5",
+            "Location_Object_6",
+            "Connectivity_Statistics_Object_7"
+        ],
+        "discovery_time_ms": 48.19178581237793,
+        "resources_discovered": 8,
+        "semantic_operations": [
+            "Read",
+            "Write",
+            "Execute",
+            "Observe",
+            "Create",
+            "Delete"
+        ],
+        "object_versioning": "supported",
+        "resource_model": "hierarchical",
+        "interoperability_score": 0.85,
+        "application_overhead_bytes": 156,
+        "standardization_body": "OMA_SpecWorks"
+    },
+    "summary_metrics": {
+        "total_latency_ms": 269.08016204833984,
+        "total_overhead_bytes": 264,
+        "overall_efficiency": 0.7514285714285714
+    }
+}

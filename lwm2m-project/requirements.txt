@@ -1,0 +1,8 @@
+# lwm2m-project/requirements
+aiocoap>=0.4.4
+cbor2>=5.4.0
+pycobra>=0.1.0
+cryptography>=3.4.0
+python-dateutil>=2.8.0
+asyncio-mqtt>=0.11.0
+

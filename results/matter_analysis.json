@@ -1,0 +1,60 @@
+{
+    "protocol_name": "Matter",
+    "analysis_timestamp": "2025-06-23T22:49:29.742708800Z",
+    "analysis_type": "Matter_Protocol_OSI_Analysis",
+    "total_analysis_time_ms": 830.0,
+    "osi_layer_4_transport": {
+        "protocol": "Matter_UDP_TCP",
+        "udp_discovery_time_ms": 95.0,
+        "tcp_connection_time_ms": 155.0,
+        "udp_overhead_bytes": 8,
+        "tcp_overhead_bytes": 20,
+        "total_transport_overhead": 28,
+        "multi_transport_support": true,
+        "efficiency_score": 0.75
+    },
+    "osi_layer_5_session": {
+        "session_type": "Matter_Commissioning",
+        "commissioning_time_ms": 452.0,
+        "session_complexity": "High",
+        "multi_admin_support": true,
+        "session_overhead_bytes": 342,
+        "session_efficiency": 0.65,
+        "security_level": "High",
+        "certificate_size_bytes": 350
+    },
+    "osi_layer_6_presentation": {
+        "encoding_format": "Matter_Cluster_TLV",
+        "encoding_time_ms": 28.0,
+        "raw_data_size_bytes": 156,
+        "encoded_size_bytes": 179,
+        "compression_ratio": 0.8715083798882681,
+        "encoding_efficiency": 1.1474358974358974,
+        "cluster_support": true
+    },
+    "osi_layer_7_application": {
+        "application_protocol": "Matter",
+        "cluster_model": "Matter_Application_Clusters",
+        "supported_clusters": [
+            "Basic_Information_0x0028",
+            "Identify_0x0003",
+            "Groups_0x0004",
+            "OnOff_0x0006",
+            "Level_Control_0x0008",
+            "Color_Control_0x0300",
+            "Temperature_Measurement_0x0402",
+            "Pressure_Measurement_0x0403",
+            "Illuminance_Measurement_0x0400",
+            "Door_Lock_0x0101"
+        ],
+        "discovery_time_ms": 93.0,
+        "clusters_discovered": 10,
+        "interoperability_score": 0.95,
+        "application_overhead_bytes": 267
+    },
+    "summary_metrics": {
+        "total_latency_ms": 823.0,
+        "total_overhead_bytes": 816,
+        "overall_efficiency": 0.8743589743589744
+    }
+}

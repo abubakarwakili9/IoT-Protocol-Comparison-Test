@@ -1,0 +1,27 @@
+# matter-project/Cargo.toml
+[package]
+name = "matter-osi-analyzer"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+# Real Matter implementation
+rs-matter = { git = "https://github.com/project-chip/rs-matter.git", branch = "main" }
+rs-matter-stack = { git = "https://github.com/project-chip/rs-matter.git", branch = "main" }
+
+# Existing dependencies
+tokio = { version = "1.0", features = ["full", "net", "time", "macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+
+# Additional for real protocol analysis
+futures = "0.3"
+uuid = { version = "1.0", features = ["v4"] }
+
+[[bin]]
+name = "matter_analyzer"
+path = "src/main.rs"

@@ -1,0 +1,38 @@
+{
+    "comparison_timestamp": "2025-06-24T14:23:37.589644",
+    "protocols_compared": [
+        "LwM2M",
+        "Matter"
+    ],
+    "lwm2m_metrics": {
+        "protocol": "LwM2M",
+        "transport_time": 45.323848724365234,
+        "session_time": 159.44576263427734,
+        "encoding_time": 16.118764877319336,
+        "discovery_time": 48.19178581237793,
+        "total_latency": 269.08016204833984,
+        "overall_efficiency": 0.7514285714285714
+    },
+    "matter_metrics": {
+        "protocol": "Matter",
+        "transport_time": 250.0,
+        "session_time": 452.0,
+        "encoding_time": 28.0,
+        "discovery_time": 93.0,
+        "total_latency": 823.0,
+        "overall_efficiency": 0.8743589743589744
+    },
+    "comparison_results": {
+        "transport_winner": "LwM2M",
+        "session_winner": "LwM2M",
+        "encoding_winner": "LwM2M",
+        "discovery_winner": "LwM2M",
+        "overall_winner": "Matter"
+    },
+    "performance_differences": {
+        "transport_difference_ms": 204.67615127563477,
+        "session_difference_ms": 292.55423736572266,
+        "total_latency_difference_ms": 553.9198379516602,
+        "efficiency_difference": 0.12293040293040292
+    }
+}
