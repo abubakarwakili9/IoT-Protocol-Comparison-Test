@@ -1,0 +1,1 @@
+C:\Users\pc\Documents\GitHub\IoT-Protocol-Comparison-Test\matter-project\target\debug\matter-research-analyzer.exe: C:\Users\pc\Documents\GitHub\IoT-Protocol-Comparison-Test\matter-project\src\main.rs

@@ -1,0 +1,72 @@
+{
+  "lwm2m_results": {
+    "initialization": {
+      "initialization_time_ms": 15.2
+    },
+    "registration": {
+      "success": true,
+      "registration_time_ms": 45.7,
+      "payload_size_bytes": 28
+    },
+    "data_transmission": {
+      "success": true,
+      "send_time_ms": 8.4,
+      "tlv_encoded_size_bytes": 24,
+      "compression_ratio": 2.1
+    },
+    "resource_discovery": {
+      "success": true,
+      "discovery_time_ms": 12.3
+    }
+  },
+  "matter_results": {
+    "osi_layer_4_transport": {
+      "udp_discovery_time_ms": 12.3,
+      "tcp_connection_time_ms": 8.7,
+      "total_transport_overhead": 60,
+      "efficiency_score": 0.78
+    },
+    "osi_layer_5_session": {
+      "commissioning_time_ms": 89.2,
+      "pairing_overhead_bytes": 156,
+      "session_establishment_efficiency": 0.78
+    },
+    "osi_layer_6_presentation": {
+      "encoding_time_ms": 0.25,
+      "tlv_overhead_bytes": 12,
+      "compression_ratio": 0.85
+    },
+    "osi_layer_7_application": {
+      "discovery_time_ms": 18.5,
+      "cluster_initialization_time_ms": 12.1,
+      "application_overhead_bytes": 24
+    }
+  },
+  "comparison": {
+    "setup_time": {
+      "lwm2m_ms": 60.900000000000006,
+      "matter_ms": 89.2,
+      "winner": "LwM2M",
+      "improvement_percent": 31.726457399103136
+    },
+    "data_efficiency": {
+      "lwm2m_bytes": 24,
+      "matter_bytes": 60,
+      "winner": "LwM2M",
+      "efficiency_improvement": 60.0
+    },
+    "discovery_time": {
+      "lwm2m_ms": 12.3,
+      "matter_ms": 18.5,
+      "winner": "LwM2M"
+    }
+  },
+  "test_metadata": {
+    "start_time": "2025-07-05T13:43:34.035953",
+    "test_environment": "Desktop Simulation",
+    "protocols_tested": [
+      "LwM2M",
+      "Matter"
+    ]
+  }
+}
